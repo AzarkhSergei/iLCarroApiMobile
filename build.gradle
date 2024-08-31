@@ -1,0 +1,31 @@
+plugins {
+    id("java")
+}
+
+group = "org.example"
+version = "1.0-SNAPSHOT"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.testng:testng:7.9.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.18.1'
+
+    compileOnly 'org.projectlombok:lombok:1.18.34'
+    annotationProcessor 'org.projectlombok:lombok:1.18.34'
+    testCompileOnly 'org.projectlombok:lombok:1.18.34'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.34'
+
+    implementation 'io.appium:java-client:8.5.1'
+
+    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
+
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'io.rest-assured:rest-assured:5.4.0'
+}
+
+test {
+    useTestNG()
+}
