@@ -13,6 +13,10 @@ dependencies {
     implementation 'org.testng:testng:7.9.0'
     implementation 'org.seleniumhq.selenium:selenium-java:4.18.1'
 
+
+    testImplementation platform("io.qameta.allure:allure-bom:2.24.0")
+    testImplementation "io.qameta.allure:allure-testng"
+
     compileOnly 'org.projectlombok:lombok:1.18.34'
     annotationProcessor 'org.projectlombok:lombok:1.18.34'
     testCompileOnly 'org.projectlombok:lombok:1.18.34'

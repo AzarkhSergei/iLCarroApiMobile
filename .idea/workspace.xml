@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa300459-0156-4c7b-8799-e5b7251bce4c" name="Changes" comment="added reg tests">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/BookedDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/CarDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/TokenDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/enums/Fuel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/okhttp/AddNewCarTestsOkHttp.java" afterDir="false" />
+    <list default="true" id="aa300459-0156-4c7b-8799-e5b7251bce4c" name="Changes" comment="added AddNewCarTestsOkHttp">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/apirest/AuthenticationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/apirest/CarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/api/rest/AddNewCarTestRest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/api/rest/LoginTestsRest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/api/rest/RegistrationTestsRest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/interfaces/BaseApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaces/BaseApi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,12 +25,32 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="iLCarroApiMobile" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -61,20 +83,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.AddNewCarTestsOkHttp.addNewCarPositiveTest.executor": "Run",
-    "Gradle.AddNewCarTestsOkHttp.login.executor": "Run",
-    "Gradle.RegistrationTestsOkHttp.registrationNegative_emailWOAt.executor": "Run",
-    "Gradle.RegistrationTestsOkHttp.registrationPositive.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.AddNewCarTestRest.addNewCarPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AddNewCarTestsOkHttp.addNewCarPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AddNewCarTestsOkHttp.login.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTestsRest.loginPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RegistrationTestsOkHttp.registrationNegative_emailWOAt.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RegistrationTestsOkHttp.registrationPositive.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RegistrationTestsRest.registrationNegativeTestHTTP.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RegistrationTestsRest.registrationNegativeTestWrongEmail.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RegistrationTestsRest.registrationPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Gradle.AddNewCarTestsOkHttp.addNewCarPositiveTest">
-    <configuration name="AddNewCarTestsOkHttp.addNewCarPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+}</component>
+  <component name="RunManager" selected="Gradle.AddNewCarTestRest.addNewCarPositiveTest">
+    <configuration name="AddNewCarTestRest.addNewCarPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -87,7 +115,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;api.okhttp.AddNewCarTestsOkHttp.addNewCarPositiveTest&quot;" />
+            <option value="&quot;api.rest.AddNewCarTestRest.addNewCarPositiveTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -98,7 +126,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="AddNewCarTestsOkHttp.login" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LoginTestsRest.loginPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -111,7 +139,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;api.okhttp.AddNewCarTestsOkHttp.login&quot;" />
+            <option value="&quot;api.rest.LoginTestsRest.loginPositiveTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -122,7 +150,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="RegistrationTestsOkHttp.registrationNegative_emailWOAt" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RegistrationTestsRest.registrationNegativeTestHTTP" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -135,7 +163,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;api.okhttp.RegistrationTestsOkHttp.registrationNegative_emailWOAt&quot;" />
+            <option value="&quot;api.rest.RegistrationTestsRest.registrationNegativeTestHTTP&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -146,7 +174,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="RegistrationTestsOkHttp.registrationPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RegistrationTestsRest.registrationNegativeTestWrongEmail" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -159,7 +187,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;api.okhttp.RegistrationTestsOkHttp.registrationPositive&quot;" />
+            <option value="&quot;api.rest.RegistrationTestsRest.registrationNegativeTestWrongEmail&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="RegistrationTestsRest.registrationPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;api.rest.RegistrationTestsRest.registrationPositiveTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -172,10 +224,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AddNewCarTestsOkHttp.addNewCarPositiveTest" />
-        <item itemvalue="Gradle.AddNewCarTestsOkHttp.login" />
-        <item itemvalue="Gradle.RegistrationTestsOkHttp.registrationPositive" />
-        <item itemvalue="Gradle.RegistrationTestsOkHttp.registrationNegative_emailWOAt" />
+        <item itemvalue="Gradle.AddNewCarTestRest.addNewCarPositiveTest" />
+        <item itemvalue="Gradle.RegistrationTestsRest.registrationPositiveTest" />
+        <item itemvalue="Gradle.LoginTestsRest.loginPositiveTest" />
+        <item itemvalue="Gradle.RegistrationTestsRest.registrationNegativeTestHTTP" />
+        <item itemvalue="Gradle.RegistrationTestsRest.registrationNegativeTestWrongEmail" />
       </list>
     </recent_temporary>
   </component>
@@ -196,11 +249,20 @@
       <option name="project" value="LOCAL" />
       <updated>1725133792440</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added AddNewCarTestsOkHttp">
+      <option name="closed" value="true" />
+      <created>1725206393361</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725206393361</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added reg tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="added reg tests" />
+    <MESSAGE value="added AddNewCarTestsOkHttp" />
+    <option name="LAST_COMMIT_MESSAGE" value="added AddNewCarTestsOkHttp" />
   </component>
 </project>
